@@ -1,6 +1,45 @@
 # BuzzQuizz
+This project is a mobile implementation of the Parrot Card Game, a themed memory game with randomness, effects, transition, responsiveness and dancing parrots!. This working with HTML, CSS and JavaScript. Try it out now at https://buzzquizz-lac.vercel.app/
 
-https://buzzquizz-lac.vercel.app/
+# About
+- Distribution of cards
+    - When entering the game, the user is asked how many cards he wants to play
+    - The user can only enter even numbers in the `prompt`, from 4 to 14. Any number that breaks the rule is not accepted.
+    - After entering a number of valid cards, the game must enter the cards face down with the deal dealt.
+
+- Click on the letter
+    - When clicking on a card, it is turned over.
+    - If it is the first card of the second, it remains until the user chooses the card.
+    - If it is the second card turned over, there are 2 situations:
+        - If it is equal to the first card, the user got it right and both will be up until the end of the game.
+        - If it is a different card than the first card turned over, the user made a mistake. In this case, the game saves 1 second and then turns both cards face down again.
+
+- End of the Game an `alert` is displayed with the message *"You won in X moves!"* where X is the number of times the user has turned a card in the game.
+
+# OBS
+This web site is a replica, using the tecnologies:
+
+- HTML
+- CSS
+- JavaScript
+
+By open this website is possible see all styles and features implemented by the long in your construction.
+
+# How to run
+Clone this repository
+Finally access http://localhost:3000 on your favorite browser. (unless it is Internet Explorer. In this case, review your life decisions). 
+
+You can also try it out now at https://buzzquizz-lac.vercel.app/
+
+# Who
+Ludmila Silveira, 19 years old and a Computer Engineer student at Federal University of Santa Catarina (UFSC). 
+
+I'm currently studying to be a full stack developer and this is a learning project.
+
+# When 
+@date NOV/2022
+@copyright Copyright (c) 2022
+
 
 # Descrição
 Seu primeiro projetão será a implementação de um sistema de Quizzes em HTML, CSS e JavaScript! Nesse sistema, você será responsável por desenvolver tanto a experiência do Quiz em si, quanto as telas que permitem criar quizzes! 
@@ -9,295 +48,7 @@ Você e sua dupla construirão todo o front-end da aplicação e usarão como ba
 
 # API
 
-## Obter quizzes
-Para obter todos os quizzes, faça uma requisição `GET` para a URL
-```jsx
-https://mock-api.driven.com.br/api/v4/buzzquizz/quizzes
-```
 
-O servidor enviará um array de objetos como o seguinte:
-```
-[
-	{
-		id: 1,
-		title: "Título do quizz",
-		image: "https://http.cat/411.jpg",
-		questions: [
-			{
-				title: "Título da pergunta 1",
-				color: "#123456",
-				answers: [
-					{
-						text: "Texto da resposta 1",
-						image: "https://http.cat/411.jpg",
-						isCorrectAnswer: true
-					},
-					{
-						text: "Texto da resposta 2",
-						image: "https://http.cat/412.jpg",
-						isCorrectAnswer: false
-					}
-				]
-			},
-			{
-				title: "Título da pergunta 2",
-				color: "#123456",
-				answers: [
-					{
-						text: "Texto da resposta 1",
-						image: "https://http.cat/411.jpg",
-						isCorrectAnswer: true
-					},
-					{
-						text: "Texto da resposta 2",
-						image: "https://http.cat/412.jpg",
-						isCorrectAnswer: false
-					}
-				]
-			},
-			{
-				title: "Título da pergunta 3",
-				color: "#123456",
-				answers: [
-					{
-						text: "Texto da resposta 1",
-						image: "https://http.cat/411.jpg",
-						isCorrectAnswer: true
-					},
-					{
-						text: "Texto da resposta 2",
-						image: "https://http.cat/412.jpg",
-						isCorrectAnswer: false
-					}
-				]
-			}
-		],
-		levels: [
-			{
-				title: "Título do nível 1",
-				image: "https://http.cat/411.jpg",
-				text: "Descrição do nível 1",
-				minValue: 0
-			},
-			{
-				title: "Título do nível 2",
-				image: "https://http.cat/412.jpg",
-				text: "Descrição do nível 2",
-				minValue: 50
-			}
-		]
-	}
-]
-```
-
-## Obter um único quizz
-
-Para buscar um único quizz, faça uma requisição `GET` para a URL
-```jsx
-https://mock-api.driven.com.br/api/v4/buzzquizz/quizzes/ID_DO_QUIZZ
-```
-
-substituindo `ID_DO_QUIZZ` pelo id do quizz desejado.
-
-O servidor entregará um objeto no seguinte formato:
-```
-{
-	id: 1,
-	title: "Título do quizz",
-	image: "https://http.cat/411.jpg",
-	questions: [
-		{
-			title: "Título da pergunta 1",
-			color: "#123456",
-			answers: [
-				{
-					text: "Texto da resposta 1",
-					image: "https://http.cat/411.jpg",
-					isCorrectAnswer: true
-				},
-				{
-					text: "Texto da resposta 2",
-					image: "https://http.cat/412.jpg",
-					isCorrectAnswer: false
-				}
-			]
-		},
-		{
-			title: "Título da pergunta 2",
-			color: "#123456",
-			answers: [
-				{
-					text: "Texto da resposta 1",
-					image: "https://http.cat/411.jpg",
-					isCorrectAnswer: true
-				},
-				{
-					text: "Texto da resposta 2",
-					image: "https://http.cat/412.jpg",
-					isCorrectAnswer: false
-				}
-			]
-		},
-		{
-			title: "Título da pergunta 3",
-			color: "#123456",
-			answers: [
-				{
-					text: "Texto da resposta 1",
-					image: "https://http.cat/411.jpg",
-					isCorrectAnswer: true
-				},
-				{
-					text: "Texto da resposta 2",
-					image: "https://http.cat/412.jpg",
-					isCorrectAnswer: false
-				}
-			]
-		}
-	],
-	levels: [
-		{
-			title: "Título do nível 1",
-			image: "https://http.cat/411.jpg",
-			text: "Descrição do nível 1",
-			minValue: 0
-		},
-		{
-			title: "Título do nível 2",
-			image: "https://http.cat/412.jpg",
-			text: "Descrição do nível 2",
-			minValue: 50
-		}
-	]
-}
-```
-
-## Criar quizz
-Para criar um quizz, envie uma requisição `POST` para a URL
-```jsx
-https://mock-api.driven.com.br/api/v4/buzzquizz/quizzes
-```
-
-enviando um objeto no seguinte formato:
-```
-{
-	title: "Título do quizz",
-	image: "https://http.cat/411.jpg",
-	questions: [
-		{
-			title: "Título da pergunta 1",
-			color: "#123456",
-			answers: [
-				{
-					text: "Texto da resposta 1",
-					image: "https://http.cat/411.jpg",
-					isCorrectAnswer: true
-				},
-				{
-					text: "Texto da resposta 2",
-					image: "https://http.cat/412.jpg",
-					isCorrectAnswer: false
-				}
-			]
-		},
-		{
-			title: "Título da pergunta 2",
-			color: "#123456",
-			answers: [
-				{
-					text: "Texto da resposta 1",
-					image: "https://http.cat/411.jpg",
-					isCorrectAnswer: true
-				},
-				{
-					text: "Texto da resposta 2",
-					image: "https://http.cat/412.jpg",
-					isCorrectAnswer: false
-				}
-			]
-		},
-		{
-			title: "Título da pergunta 3",
-			color: "#123456",
-			answers: [
-				{
-					text: "Texto da resposta 1",
-					image: "https://http.cat/411.jpg",
-					isCorrectAnswer: true
-				},
-				{
-					text: "Texto da resposta 2",
-					image: "https://http.cat/412.jpg",
-					isCorrectAnswer: false
-				}
-			]
-		}
-	],
-	levels: [
-		{
-			title: "Título do nível 1",
-			image: "https://http.cat/411.jpg",
-			text: "Descrição do nível 1",
-			minValue: 0
-		},
-		{
-			title: "Título do nível 2",
-			image: "https://http.cat/412.jpg",
-			text: "Descrição do nível 2",
-			minValue: 50
-		}
-	]
-}
-```
-Deve haver pelo menos 3 perguntas por quizz. Cada pergunta deve ter entre 2 e 4 respostas. Deve haver pelo menos 2 níveis por quizz.
-
-## BÔNUS: Apagar quizz
-Na criação do quizz, o servidor responde enviando um objeto que representa o quizz, com algumas informações a mais do que quando só buscamos. Ele vem com um campo `key`.
-
-Este valor pode ser usado para apagar um quizz, fazendo com que somente quem enviou o quizz consiga apagá-lo.
-
-Para que isso seja possível, você deve ter este valor armazenado no `localStorage` junto aos outros dados dos quizzes criados pelo usuário.
-
-Para apagar um quizz, envie uma requisição `DELETE` para a URL
-```jsx
-https://mock-api.driven.com.br/api/v4/buzzquizz/quizzes/ID_DO_QUIZZ
-```
-
-substituindo `ID_DO_QUIZZ` pelo quizz que deseja remover.
-**Importante:** Além disso, para evitar que qualquer pessoa apague um quizz, você deve enviar a chave secreta do quizz no **cabeçalho (header)** da requisição.
-
-*Uai, mas como faço isso!?*
-
-Ao enviar a requisição com axios, você pode passar mais parâmetros além da URL, por exemplo **headers**. A chave secreta deve ser enviada em um **header** com nome `Secret-Key`.
-
-*Isso não ajudou muito :(*
-
-Um dos propósitos deste bônus é pesquisar! Procure no Google mais informações ou peça ajuda ao seu tutor/tutora :)
-
-## BÔNUS: Editar quizz
-
-Na criação do quizz, o servidor responde enviando um objeto que representa o quizz, com algumas informações a mais do que quando só buscamos. Ele vem com um campo `key`.
-
-Este valor pode ser usado para editar um quizz, fazendo com que somente quem enviou o quizz consiga editá-lo.
-
-Para que isso seja possível, você deve ter este valor armazenado no `localStorage` junto aos outros dados dos quizzes criados pelo usuário.
-
-Para apagar um quizz, envie uma requisição `PUT` para a URL
-```jsx
-https://mock-api.driven.com.br/api/v4/buzzquizz/quizzes/ID_DO_QUIZZ
-```
-
-substituindo `ID_DO_QUIZZ` pelo quizz que deseja remover, enviando no corpo da requisição o objeto que representa o quizz, no mesmo formato do `POST`.
-
-**Importante:** Além disso, para evitar que qualquer pessoa apague um quizz, você deve enviar a chave secreta do quizz no **cabeçalho (header)** da requisição.
-
-*Uai, mas como faço isso!?*
-
-Ao enviar a requisição com axios, você pode passar mais parâmetros além da URL e do corpo, por exemplo **headers**. A chave secreta deve ser enviada em um **header** com nome `Secret-Key`.
-
-*Isso não ajudou muito :(*
-
-Um dos propósitos deste bônus é pesquisar! Procure no Google mais informações ou peça ajuda ao seu tutor/tutora :)
 
 # **Rotinas do Projetão**
 

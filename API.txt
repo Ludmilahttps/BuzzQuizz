@@ -1,0 +1,303 @@
+- Obter quizzes
+    
+    Para obter todos os quizzes, faça uma requisição `GET` para a URL
+    
+    ```jsx
+    https://mock-api.driven.com.br/api/v4/buzzquizz/quizzes
+    ```
+    
+    O servidor enviará um array de objetos como o seguinte:
+    
+    ```jsx
+    [
+    	{
+    		id: 1,
+    		title: "Título do quizz",
+    		image: "https://http.cat/411.jpg",
+    		questions: [
+    			{
+    				title: "Título da pergunta 1",
+    				color: "#123456",
+    				answers: [
+    					{
+    						text: "Texto da resposta 1",
+    						image: "https://http.cat/411.jpg",
+    						isCorrectAnswer: true
+    					},
+    					{
+    						text: "Texto da resposta 2",
+    						image: "https://http.cat/412.jpg",
+    						isCorrectAnswer: false
+    					}
+    				]
+    			},
+    			{
+    				title: "Título da pergunta 2",
+    				color: "#123456",
+    				answers: [
+    					{
+    						text: "Texto da resposta 1",
+    						image: "https://http.cat/411.jpg",
+    						isCorrectAnswer: true
+    					},
+    					{
+    						text: "Texto da resposta 2",
+    						image: "https://http.cat/412.jpg",
+    						isCorrectAnswer: false
+    					}
+    				]
+    			},
+    			{
+    				title: "Título da pergunta 3",
+    				color: "#123456",
+    				answers: [
+    					{
+    						text: "Texto da resposta 1",
+    						image: "https://http.cat/411.jpg",
+    						isCorrectAnswer: true
+    					},
+    					{
+    						text: "Texto da resposta 2",
+    						image: "https://http.cat/412.jpg",
+    						isCorrectAnswer: false
+    					}
+    				]
+    			}
+    		],
+    		levels: [
+    			{
+    				title: "Título do nível 1",
+    				image: "https://http.cat/411.jpg",
+    				text: "Descrição do nível 1",
+    				minValue: 0
+    			},
+    			{
+    				title: "Título do nível 2",
+    				image: "https://http.cat/412.jpg",
+    				text: "Descrição do nível 2",
+    				minValue: 50
+    			}
+    		]
+    	}
+    ]
+    ```
+    
+- Obter um único quizz
+    
+    Para buscar um único quizz, faça uma requisição `GET` para a URL
+    
+    ```jsx
+    https://mock-api.driven.com.br/api/v4/buzzquizz/quizzes/ID_DO_QUIZZ
+    ```
+    
+    substituindo `ID_DO_QUIZZ` pelo id do quizz desejado.
+    
+    O servidor entregará um objeto no seguinte formato:
+    
+    ```jsx
+    {
+    	id: 1,
+    	title: "Título do quizz",
+    	image: "https://http.cat/411.jpg",
+    	questions: [
+    		{
+    			title: "Título da pergunta 1",
+    			color: "#123456",
+    			answers: [
+    				{
+    					text: "Texto da resposta 1",
+    					image: "https://http.cat/411.jpg",
+    					isCorrectAnswer: true
+    				},
+    				{
+    					text: "Texto da resposta 2",
+    					image: "https://http.cat/412.jpg",
+    					isCorrectAnswer: false
+    				}
+    			]
+    		},
+    		{
+    			title: "Título da pergunta 2",
+    			color: "#123456",
+    			answers: [
+    				{
+    					text: "Texto da resposta 1",
+    					image: "https://http.cat/411.jpg",
+    					isCorrectAnswer: true
+    				},
+    				{
+    					text: "Texto da resposta 2",
+    					image: "https://http.cat/412.jpg",
+    					isCorrectAnswer: false
+    				}
+    			]
+    		},
+    		{
+    			title: "Título da pergunta 3",
+    			color: "#123456",
+    			answers: [
+    				{
+    					text: "Texto da resposta 1",
+    					image: "https://http.cat/411.jpg",
+    					isCorrectAnswer: true
+    				},
+    				{
+    					text: "Texto da resposta 2",
+    					image: "https://http.cat/412.jpg",
+    					isCorrectAnswer: false
+    				}
+    			]
+    		}
+    	],
+    	levels: [
+    		{
+    			title: "Título do nível 1",
+    			image: "https://http.cat/411.jpg",
+    			text: "Descrição do nível 1",
+    			minValue: 0
+    		},
+    		{
+    			title: "Título do nível 2",
+    			image: "https://http.cat/412.jpg",
+    			text: "Descrição do nível 2",
+    			minValue: 50
+    		}
+    	]
+    }
+    ```
+    
+- Criar quizz
+    
+    Para criar um quizz, envie uma requisição `POST` para a URL
+    
+    ```jsx
+    https://mock-api.driven.com.br/api/v4/buzzquizz/quizzes
+    ```
+    
+    enviando um objeto no seguinte formato:
+    
+    ```jsx
+    {
+    	title: "Título do quizz",
+    	image: "https://http.cat/411.jpg",
+    	questions: [
+    		{
+    			title: "Título da pergunta 1",
+    			color: "#123456",
+    			answers: [
+    				{
+    					text: "Texto da resposta 1",
+    					image: "https://http.cat/411.jpg",
+    					isCorrectAnswer: true
+    				},
+    				{
+    					text: "Texto da resposta 2",
+    					image: "https://http.cat/412.jpg",
+    					isCorrectAnswer: false
+    				}
+    			]
+    		},
+    		{
+    			title: "Título da pergunta 2",
+    			color: "#123456",
+    			answers: [
+    				{
+    					text: "Texto da resposta 1",
+    					image: "https://http.cat/411.jpg",
+    					isCorrectAnswer: true
+    				},
+    				{
+    					text: "Texto da resposta 2",
+    					image: "https://http.cat/412.jpg",
+    					isCorrectAnswer: false
+    				}
+    			]
+    		},
+    		{
+    			title: "Título da pergunta 3",
+    			color: "#123456",
+    			answers: [
+    				{
+    					text: "Texto da resposta 1",
+    					image: "https://http.cat/411.jpg",
+    					isCorrectAnswer: true
+    				},
+    				{
+    					text: "Texto da resposta 2",
+    					image: "https://http.cat/412.jpg",
+    					isCorrectAnswer: false
+    				}
+    			]
+    		}
+    	],
+    	levels: [
+    		{
+    			title: "Título do nível 1",
+    			image: "https://http.cat/411.jpg",
+    			text: "Descrição do nível 1",
+    			minValue: 0
+    		},
+    		{
+    			title: "Título do nível 2",
+    			image: "https://http.cat/412.jpg",
+    			text: "Descrição do nível 2",
+    			minValue: 50
+    		}
+    	]
+    }
+    ```
+    
+    Deve haver pelo menos 3 perguntas por quizz. Cada pergunta deve ter entre 2 e 4 respostas. Deve haver pelo menos 2 níveis por quizz.
+    
+
+- **BÔNUS**: Apagar quizz
+    
+    Na criação do quizz, o servidor responde enviando um objeto que representa o quizz, com algumas informações a mais do que quando só buscamos. Ele vem com um campo `key`.
+    
+    Este valor pode ser usado para apagar um quizz, fazendo com que somente quem enviou o quizz consiga apagá-lo.
+    
+    Para que isso seja possível, você deve ter este valor armazenado no `localStorage` junto aos outros dados dos quizzes criados pelo usuário.
+    
+    Para apagar um quizz, envie uma requisição `DELETE` para a URL
+    
+    ```jsx
+    https://mock-api.driven.com.br/api/v4/buzzquizz/quizzes/ID_DO_QUIZZ
+    ```
+    
+    substituindo `ID_DO_QUIZZ` pelo quizz que deseja remover. 
+    
+    **Importante:** Além disso, para evitar que qualquer pessoa apague um quizz, você deve enviar a chave secreta do quizz no **cabeçalho (header)** da requisição.
+    
+    *Uai, mas como faço isso!?*
+    
+    Ao enviar a requisição com axios, você pode passar mais parâmetros além da URL, por exemplo **headers**. A chave secreta deve ser enviada em um **header** com nome `Secret-Key`.
+    
+    *Isso não ajudou muito :(*
+    
+    Um dos propósitos deste bônus é pesquisar! Procure no Google mais informações ou peça ajuda ao seu tutor/tutora :)
+    
+- **BÔNUS**: Editar quizz
+    
+    Na criação do quizz, o servidor responde enviando um objeto que representa o quizz, com algumas informações a mais do que quando só buscamos. Ele vem com um campo `key`.
+    
+    Este valor pode ser usado para editar um quizz, fazendo com que somente quem enviou o quizz consiga editá-lo.
+    
+    Para que isso seja possível, você deve ter este valor armazenado no `localStorage` junto aos outros dados dos quizzes criados pelo usuário.
+    
+    Para apagar um quizz, envie uma requisição `PUT` para a URL
+    
+    ```jsx
+    https://mock-api.driven.com.br/api/v4/buzzquizz/quizzes/ID_DO_QUIZZ
+    ```
+    
+    substituindo `ID_DO_QUIZZ` pelo quizz que deseja remover, enviando no corpo da requisição o objeto que representa o quizz, no mesmo formato do `POST`. 
+    
+    **Importante:** Além disso, para evitar que qualquer pessoa apague um quizz, você deve enviar a chave secreta do quizz no **cabeçalho (header)** da requisição.
+    
+    *Uai, mas como faço isso!?*
+    
+    Ao enviar a requisição com axios, você pode passar mais parâmetros além da URL e do corpo, por exemplo **headers**. A chave secreta deve ser enviada em um **header** com nome `Secret-Key`.
+    
+    *Isso não ajudou muito :(*
+    
+    Um dos propósitos deste bônus é pesquisar! Procure no Google mais informações ou peça ajuda ao seu tutor/tutora :)
