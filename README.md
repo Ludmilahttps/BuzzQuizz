@@ -1,9 +1,6 @@
 # BuzzQuizz
-Seu primeiro projetão será a implementação de um sistema de Quizzes em HTML, CSS e JavaScript! Nesse sistema, você será responsável por desenvolver tanto a experiência do Quiz em si, quanto as telas que permitem criar quizzes! 
-
-Você e sua dupla construirão todo o front-end da aplicação e usarão como back-end a API que fornecemos:
-
-This project is a mobile implementation of the Parrot Card Game, a themed memory game with randomness, effects, transition, responsiveness and dancing parrots!. This working with HTML, CSS and JavaScript. Try it out now at https://buzzquizz-lac.vercel.app/
+Esse projeto consiste na implementação de um sistema de Quizzes em HTML, CSS e JavaScript! Nesse sistema, fomos responsáveis por desenvolver tanto a experiência do Quiz em si, quanto as telas que permitem criar quizzes como back-end a API que fornecida pela bootcamp! 
+. This working with HTML, CSS and JavaScript. Try it out now at https://buzzquizz-lac.vercel.app/
 
 # About
 
