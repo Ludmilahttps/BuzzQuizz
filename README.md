@@ -5,8 +5,8 @@ This project consists of the implementation of a Quizzes system in HTML, CSS and
 # About
 
 ### Layout
-    - [ ]  Aplique o layout para mobile e desktop;
-    - [ ]  O layout deve alternar para versão de dispositivos móveis quando a largura da janela for inferior a 1100px
+   Aplique o layout para mobile e desktop;
+   O layout deve alternar para versão de dispositivos móveis quando a largura da janela for inferior a 1100px
 
 ### Tela 1: Lista de Quizzes
     - [ ]  Nesta tela, devem ser listados os quizzes fornecidos pelo servidor, seguindo o layout dado
