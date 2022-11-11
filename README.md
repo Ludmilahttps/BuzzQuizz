@@ -1,5 +1,5 @@
 # BuzzQuizz
-Esse projeto consiste na implementação de um sistema de Quizzes em HTML, CSS e JavaScript! Nesse sistema, fomos responsáveis por desenvolver tanto a experiência do Quiz em si, quanto as telas que permitem criar quizzes como back-end a API que fornecida pela bootcamp! 
+This project consists of the implementation of a Quizzes system in HTML, CSS and JavaScript! In this system, we were responsible for developing both the Quiz experience itself and the screens that allow you to create quizzes. On the back-end we use the API provided by bootcamp!
 . This working with HTML, CSS and JavaScript. Try it out now at https://buzzquizz-lac.vercel.app/
 
 # About
