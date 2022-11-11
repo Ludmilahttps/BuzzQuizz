@@ -5,9 +5,9 @@ This project consists of the implementation of a responsive system of Quizzes in
 # About
 
 ### View 1
-   Nesta tela, são listados os quizzes fornecidos pelo servidor;
-   A lista de quizzes do usuário mostra somente os seus quizzes;
-   Ao clicar em "Criar Quizz" ou no "+" somos difecionados à tela de **Criação de Quiz** (view3).
+  Nesta tela, são listados os quizzes fornecidos pelo servidor;
+  A lista de quizzes do usuário mostra somente os seus quizzes;
+  Ao clicar em "Criar Quizz" ou no "+" somos difecionados à tela de **Criação de Quiz** (view3).
 
 ### View 2
     - [ ]  No topo do quizz, deve ser exibido um banner com a imagem e o título do quizz. A imagem deve estar escurecida com uma camada preta de 60% de opacidade.
