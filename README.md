@@ -1,21 +1,15 @@
 # BuzzQuizz
-This project consists of the implementation of a Quizzes system in HTML, CSS and JavaScript! In this system, we were responsible for developing both the Quiz experience itself and the screens that allow you to create quizzes. On the back-end we use the API provided by bootcamp!
+This project consists of the implementation of a responsive system of Quizzes in HTML, CSS and JavaScript! In this system, we were responsible for developing both the Quiz experience itself and the screens that allow you to create quizzes. On the back-end we use the API provided by bootcamp!
 . This working with HTML, CSS and JavaScript. Try it out now at https://buzzquizz-lac.vercel.app/
 
 # About
 
-### Layout
-   Aplique o layout para mobile e desktop;
-   
-   O layout deve alternar para versão de dispositivos móveis quando a largura da janela for inferior a 1100px
+### View 1
+    Nesta tela, são listados os quizzes fornecidos pelo servidor;
+    A lista de quizzes do usuário mostra somente os seus quizzes;
+    Ao clicar em "Criar Quizz" ou no "+" somos difecionados à tela de **Criação de Quiz** (view3).
 
-### Tela 1: Lista de Quizzes
-    - [ ]  Nesta tela, devem ser listados os quizzes fornecidos pelo servidor, seguindo o layout dado
-    - [ ]  A lista de quizzes do usuário deve mostrar somente seus quizzes, enquanto a lista de baixo deve mostrar todos os quizzes recebidos, sem os do usuário. Para diferenciar os quizzes do usuário dos demais, veja o requisito **Quizzes do Usuário**
-    - [ ]  Os quizzes devem ser exibidos num formato retangular (conforme layout), com a imagem e título do quizz. A imagem deve estar sobreposta com um degradê de preto para transparente conforme layout. Ao clicar sobre o quizz, esta tela deve sumir e dar lugar à **Tela 2: Página de um quizz** do quizz em questão
-    - [ ]  Ao clicar em "Criar Quizz" ou no "+" essa tela deve sumir, dando lugar à tela de **Tela 3: Criação de Quiz**
-
-### Tela 2: Página de um quizz (perguntas)
+### View 2
     - [ ]  No topo do quizz, deve ser exibido um banner com a imagem e o título do quizz. A imagem deve estar escurecida com uma camada preta de 60% de opacidade.
     - [ ]  As respostas de cada pergunta devem ser exibidas organizadas aleatoriamente
     - [ ]  Ao clicar em uma resposta, as demais devem ganhar o efeito "esbranquiçado" do layout
@@ -30,7 +24,7 @@ This project consists of the implementation of a Quizzes system in HTML, CSS and
     - [ ]  Ao clicar no botão "Reiniciar Quizz", a tela deverá ser scrollada novamente para o topo, as respostas zeradas pro estado inicial e a caixa de resultado escondida novamente
     - [ ]  Ao clicar no botão "Voltar pra home", essa tela deve sumir e dar lugar à **Tela 1: Lista de Quizzes**
 
-### Tela 3: Criação de Quiz
+### View 3
     - [ ]  O processo de criar um quizz passará por 4 telas, seguindo o layout:
         - Tela 3.1: Informações básicas do quizz
         - Tela 3.2: Perguntas do quizz
