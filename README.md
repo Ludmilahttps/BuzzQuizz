@@ -10,12 +10,12 @@ This project consists of the implementation of a responsive system of Quizzes in
   Ao clicar em "Criar Quizz" ou no "+" somos difecionados à tela de **Criação de Quiz** (view3).
 
 ### View 2
-    - [ ]  No topo do quizz, deve ser exibido um banner com a imagem e o título do quizz. A imagem deve estar escurecida com uma camada preta de 60% de opacidade.
-    - [ ]  As respostas de cada pergunta devem ser exibidas organizadas aleatoriamente
-    - [ ]  Ao clicar em uma resposta, as demais devem ganhar o efeito "esbranquiçado" do layout
-    - [ ]  Não deve ser possível alterar a resposta após a escolha
-    - [ ]  Após escolher uma resposta, o texto das opções deve ganhar a cor vermelha ou verde, conforme layout, indicando quais eram as respostas erradas e a certa
-    - [ ]  Após 2 segundos de respondida, deve-se scrollar a página para a próxima pergunta
+    No topo do quizz, deve ser exibido um banner com a imagem e o título do quizz. A imagem deve estar escurecida com uma camada preta de 60% de opacidade.
+    As respostas de cada pergunta devem ser exibidas organizadas aleatoriamente
+    Ao clicar em uma resposta, as demais devem ganhar o efeito "esbranquiçado" do layout
+    Não deve ser possível alterar a resposta após a escolha
+    Após escolher uma resposta, o texto das opções deve ganhar a cor vermelha ou verde, conforme layout, indicando quais eram as respostas erradas e a certa
+    Após 2 segundos de respondida, deve-se scrollar a página para a próxima pergunta
 
     - [ ]  Após responder todas as perguntas, deve aparecer ao final da tela a caixa de resultado do quizz. Assim como na passagem das perguntas, deve-se aguardar 2 segundos após a última resposta e então scrollar a tela para exibir essa caixa de resultado
     - [ ]  A pontuação do quiz (porcentagem de acertos sobre total de perguntas) deve ser calculada no front, sem nenhuma comunicação com o servidor, bem como a classificação de em qual nível o usuário ficou baseado nessa pontuação
